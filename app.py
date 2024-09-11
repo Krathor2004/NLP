@@ -5,7 +5,7 @@ import datetime
 import os
 
 app = Flask(__name__)
-model_path = os.path.join(os.getcwd(), 'model', 'class.pkl')
+model_path = os.path.join(os.getcwd(), 'model', 'classifier.pkl')
 print(model_path)
 #model_path = r'C:\Users\purus\Downloads\Sentiment_Analysis_Case_Study-main\Sentiment_Analysis_Case_Study-main\sentimentanalysis\sentimentanalysis\models\class.pkl'
 classifier = joblib.load(model_path) 
