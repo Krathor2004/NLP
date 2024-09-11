@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the model
-model_path = os.path.join(os.getcwd(), 'model', 'class.pkl')
+model_path = os.path.join(os.getcwd(), 'model', 'classifier.pkl')
 classifier = joblib.load(model_path)
 
 def predictfunc(reviews):
